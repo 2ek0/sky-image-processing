@@ -13,8 +13,8 @@ from functools import partial
 
 # Add the draft directory to Python path for imports
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from draft.create_sky_mask import create_sky_mask, load_sky_mask
-from draft.sun_position_identification import SunPositionCalculator
+from create_sky_mask import create_sky_mask, load_sky_mask
+from sun_position_identification import SunPositionCalculator
 
 def enhance_contrast(img_rgb, alpha=1.3, beta=10):
     """
